@@ -4,33 +4,34 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'menu',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
-    path: 'menu',
-    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+    path: 'login',
+    loadChildren: () => import('./paginas/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'crearuser',
-    loadChildren: () => import('./crearuser/crearuser.module').then( m => m.CrearuserPageModule)
+    path: 'home-profesor',
+    loadChildren: () => import('./paginas/home-profesor/home-profesor.module').then( m => m.HomeProfesorPageModule)
   },
   {
-    path: 'cambiarcontra',
-    loadChildren: () => import('./cambiarcontra/cambiarcontra.module').then( m => m.CambiarcontraPageModule)
+    path: 'home-alumno',
+    loadChildren: () => import('./paginas/home-alumno/home-alumno.module').then( m => m.HomeAlumnoPageModule)
   },
   {
-    path: 'inicio/:idUsuario',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+    path: 'scanner-qr',
+    loadChildren: () => import('./paginas/scanner-qr/scanner-qr.module').then( m => m.ScannerQrPageModule)
   },
   {
-    path: 'inicio-profe/:idUsuario',
-    loadChildren: () => import('./inicio-profe/inicio-profe.module').then( m => m.InicioProfePageModule)
+    path: 'detalle-asistencia',
+    loadChildren: () => import('./paginas/detalle-asistencia/detalle-asistencia.module').then( m => m.DetalleAsistenciaPageModule)
   },
   {
-    path: 'qrdetalle/:idAsignatura',
-    loadChildren: () => import('./qrdetalle/qrdetalle.module').then( m => m.QRdetallePageModule)
+    path: 'detalle-clase',
+    loadChildren: () => import('./paginas/detalle-clase/detalle-clase.module').then( m => m.DetalleClasePageModule)
   },
+
 
 
 
