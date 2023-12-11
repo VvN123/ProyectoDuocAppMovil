@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Crear Usuario</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-title size="large" class="ion-text-center">RegistrApp</ion-title>
+      <ion-input type="text" label="Nombre" placeholder="Ingrese nombre" [(ngModel)]="nombre"></ion-input>
+      <ion-input type="text" label="Apellido" placeholder="Ingrese apellido" [(ngModel)]="apellido"></ion-input>
+      <ion-input type="email" label="Email" placeholder="Ingrese correo" [(ngModel)]="email"></ion-input>
+      <!-- comentario -->
+      <ion-input type="email" 
+                  label="Email"
+                  labelPlacement="floating" 
+                  helperText="Debe ingrese un correo válido"
+                  errorText ="El correo no es válido"
+                  ngModel
+                  email              
+                  placeholder="Ingrese primer correo" [(ngModel)]="email"></ion-input>
+      <ion-input type="password" label="Clave" placeholder="************" [(ngModel)]="clave"></ion-input>
+    <ion-button expand="block">Crear cuenta</ion-button>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

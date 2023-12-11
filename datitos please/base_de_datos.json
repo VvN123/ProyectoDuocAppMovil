@@ -1,0 +1,67 @@
+{
+    "USUARIOS": [
+      {
+        "1111-1": {
+          "nombre": "Juan Pérez",
+          "clase_a_cargo": "vacio",
+          "clases_inscrita": ["1", "2"],
+          "contrasena": "123456",
+          "estado": 1,
+          "rut": "1111-1"
+        }
+      },
+      {
+        "2222-2": {
+          "nombre": "María González",
+          "clase_a_cargo": "vacio",
+          "clases_inscrita": ["2", "3"],
+          "contrasena": "123456",
+          "estado": 1,
+          "rut": "2222-2"
+        }
+      },
+      {
+        "3333-3": {
+          "nombre": "Pedro Rodríguez",
+          "clase_a_cargo": ["1", "2"],
+          "clases_inscrita": "vacio",
+          "contrasena": "123456",
+          "estado": 0,
+          "rut": "3333-3"
+        }
+      },
+      {
+        "4444-4": {
+          "nombre": "Ana Martínez",
+          "clase_a_cargo": ["3"],
+          "clases_inscrita": "vacio",
+          "contrasena": "123456",
+          "estado": 0,
+          "rut": "4444-4"
+        }
+      }
+    ],
+    "CLASES": [
+      {
+        "idAsignatura": 1,
+        "nombre": "Programacion Movil",
+        "seccion": "001",
+        "profe_a_cargo": "3333-3",
+        "usuario_inscrito": ["1111-1"]
+      },
+      {
+        "idAsignatura": 2,
+        "nombre": "Consulta base de datos",
+        "seccion": "002",
+        "profe_a_cargo": "3333-3",
+        "usuario_inscrito": ["1111-1", "2222-2"]
+      },
+      {
+        "idAsignatura": 3,
+        "nombre": "Arquitectura de software",
+        "seccion": "003",
+        "profe_a_cargo": "4444-4",
+        "usuario_inscrito": ["2222-2"]
+      }
+    ]
+  }

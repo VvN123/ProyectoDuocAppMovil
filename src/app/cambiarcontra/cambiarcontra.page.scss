@@ -1,0 +1,54 @@
+ion-content 
+  
+ion-title {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000000;
+}
+  
+  ion-content {
+    --ion-background-color: rgb(255, 253, 238);
+  }
+ 
+  .custom-button {
+    font-size: 15px; /* Tamaño de fuente más pequeño */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 15px 20px; /* Espaciado interno más pequeño */
+    width: 250px; /* Ancho máximo deseado */
+    margin: 0 auto; /* Centrar horizontalmente */
+  }
+
+  .custom-header {
+    font-size: 20px; /* Tamaño de fuente personalizado */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000; /* Color de texto personalizado */
+    margin-top: 20px; /* Espacio superior personalizado */
+  }
+
+/* Estilos CSS personalizados para los elementos ion-input */
+.custom-input {
+  display:grid;
+  place-items: center;
+  padding: 40px; /* Espaciado interno */
+  margin-bottom: 15px; /* Margen inferior entre los campos */
+  width: 100%; /* Ancho completo */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Estilos CSS para el texto de ayuda */
+.custom-input .ion-label-floating .ion-label {
+  font-size: 12px; /* Tamaño de fuente personalizado para las etiquetas flotantes */
+  color: #5d5d5d; /* Color de etiqueta flotante personalizado */
+}
+
+/* Estilos CSS para el texto de error */
+.custom-input .ion-text-end .ion-text {
+  color: red; /* Color de texto de error personalizado */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 12px; /* Tamaño de fuente personalizado para el texto de error */
+}
+
+/* Ajustar espaciado entre texto y bordes internos */
+.custom-input .input-wrapper {
+  padding: 5 10px; /* Ajustar el espaciado izquierdo y derecho del texto */
+}
+

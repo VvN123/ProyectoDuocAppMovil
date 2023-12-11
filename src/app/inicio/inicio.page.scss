@@ -1,0 +1,34 @@
+
+ion-text {
+  display:grid;
+  place-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #000000;
+  display:grid;
+  place-items: center;
+}
+
+ion-content {
+  --ion-background-color: rgb(255, 253, 238);
+}
+
+.contenedor-tarjeta {
+  /* Centrar elementos horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Centrar el texto horizontalmente */
+}
+
+.imagen-alumno {
+  /* Define el ancho y alto deseado para la imagen */
+  width: 200px; /* Cambia este valor según tus necesidades */
+  height: 150px; /* Cambia este valor según tus necesidades */
+  /* Puedes usar otras propiedades CSS para personalizar aún más la imagen */
+}
+
+ion-card-title {
+  font-size: 20px; /* Ajusta el tamaño de fuente según tus necesidades */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
