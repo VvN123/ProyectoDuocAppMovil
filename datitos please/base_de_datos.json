@@ -3,7 +3,7 @@
     "1111-1": {
       "nombre": "Juan Pérez",
       "clase_a_cargo": "vacio",
-      "clases_inscrita": ["1", "2"],
+      "clases_inscrita": ["py2567", "py2686"],
       "contrasena": "123456",
       "esProfesor": false,
       "rut": "1111-1"
@@ -11,14 +11,14 @@
     "2222-2": {
       "nombre": "María González",
       "clase_a_cargo": "vacio",
-      "clases_inscrita": ["2", "3"],
+      "clases_inscrita": ["py2686", "py6452"],
       "contrasena": "123456",
       "esProfesor": false,
       "rut": "2222-2"
     },
     "3333-3": {
       "nombre": "Pedro Rodríguez",
-      "clase_a_cargo": ["1", "2"],
+      "clase_a_cargo": ["py2567", "py2686"],
       "clases_inscrita": "vacio",
       "contrasena": "123456",
       "esProfesor": true,
@@ -26,7 +26,7 @@
     },
     "4444-4": {
       "nombre": "Ana Martínez",
-      "clase_a_cargo": ["3"],
+      "clase_a_cargo": ["py6452"],
       "clases_inscrita": "vacio",
       "contrasena": "123456",
       "esProfesor": true,
