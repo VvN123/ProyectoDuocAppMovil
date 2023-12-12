@@ -19,7 +19,9 @@ export class DetalleClasePage implements OnInit {
   ngOnInit() {
     this.activatedroute.queryParams.subscribe(async params => {
       if (params['codigo']) {
+        
         this.codigoAsignatura = params['codigo'];
+        console.log(''this.codigoAsignatura)
         const asignaturaObtenida = await this.fire.obtenerAsignatura(this.codigoAsignatura);
         if (asignaturaObtenida) {
           this.asignatura = asignaturaObtenida;
