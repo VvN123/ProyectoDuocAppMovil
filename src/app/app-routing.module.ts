@@ -4,8 +4,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
-    pathMatch: 'full'
+    redirectTo: 'login',  // redirecciona a login
+    pathMatch: 'full' // para que redireccione solo cuando la ruta sea vacia
   },
   {
     path: 'login',
