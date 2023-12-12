@@ -1,5 +1,5 @@
 export class Clase {
-    idClase: string = ''
+    idAsignatura: string = ''
     nombre: string = ''
     seccion: string = ''
     profe_a_cargo: string = ''

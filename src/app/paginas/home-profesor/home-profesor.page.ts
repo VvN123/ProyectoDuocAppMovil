@@ -51,6 +51,7 @@ export class HomeProfesorPage implements OnInit {
   }
   
   verDetalleAsignatura(codigo: string) {
+    console.log('codigo'+codigo)
     this.router.navigate(['/detalle-clase'], {
       queryParams: { codigo: codigo }
     });
