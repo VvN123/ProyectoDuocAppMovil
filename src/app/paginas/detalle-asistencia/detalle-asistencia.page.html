@@ -1,13 +1,38 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>detalle-asistencia</ion-title>
+    <ion-title>Detalle de Asistencia</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalle-asistencia</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <!-- Detalles de la Asistencia -->
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Asistencia: {{ detalleAsistencia.nombreClase }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Clase: {{ detalleAsistencia.nombreClase}}</p>
+      <p>Codigo Clase: {{ detalleAsistencia.idClase }}</p>
+      
+      <p>Fecha: {{ detalleAsistencia.fecha | date }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <qrcode [qrdata]="detalleAsistencia.idAsistencia" [width]="256" [allowEmptyString]="true"></qrcode>
+  <!-- Lista de Usuarios Presentes -->
+  <ion-list>
+    <ion-list-header>
+      <ion-label>Usuarios Presentes</ion-label>
+    </ion-list-header>
+    <ion-item *ngFor="let usuario of usuariosPresentes">
+      <ion-avatar slot="start">
+        <!-- Puedes poner una imagen del usuario aquí, si la tienes -->
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ usuario.nombre }}</h2>
+        <!-- Agrega más detalles del usuario si los necesitas -->
+      </ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

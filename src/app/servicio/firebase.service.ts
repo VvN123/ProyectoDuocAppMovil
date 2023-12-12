@@ -113,5 +113,26 @@ export class FirebaseService {
       throw error;
     }
   } 
+
+  async obtenerAsistencia(idAsistencia: string) {
+    const asistenciaRef = ref(this.db, `/asistencia/${idAsistencia}`);
+    const snapshot = await get(asistenciaRef);
+    if (snapshot.exists()) {
+      return snapshot.val();
+    } else {
+      return null;
+    }
+  }
+
+  async obtenerTodasLasAsistencias() {
+    const asistenciasRef = ref(this.db, '/asistencia');
+    const snapshot = await get(asistenciasRef);
+    if (snapshot.exists()) {
+      return snapshot.val();
+    } else {
+      return {};
+    }
+  }
+  
 }
 
