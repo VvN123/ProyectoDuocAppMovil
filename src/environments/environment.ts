@@ -5,13 +5,14 @@
 export const environment = {
   production: false,
   firebaseConfig : {
-    apiKey: "AIzaSyAT_Kjf2CmIQMnCpnAlZM7BDo56PwWKk5A",
-    authDomain: "qr-asistencia-d431c.firebaseapp.com",
-    databaseURL: "https://qr-asistencia-d431c-default-rtdb.firebaseio.com",
-    projectId: "qr-asistencia-d431c",
-    storageBucket: "qr-asistencia-d431c.appspot.com",
-    messagingSenderId: "1065641335774",
-    appId: "1:1065641335774:web:969414c53cc9a1ac06db4f"
+    apiKey: "AIzaSyCVgSmL2hND9WmNpZTAE3XdtC8sPWzMqZo",
+    authDomain: "base-de-datitos.firebaseapp.com",
+    databaseURL: "https://base-de-datitos-default-rtdb.firebaseio.com",
+    projectId: "base-de-datitos",
+    storageBucket: "base-de-datitos.appspot.com",
+    messagingSenderId: "1032525402997",
+    appId: "1:1032525402997:web:ec2de09a377370e37e793c",
+    measurementId: "G-KET5YMLBPC"
   }
 };
 

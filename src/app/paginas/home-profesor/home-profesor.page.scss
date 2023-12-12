@@ -1,0 +1,53 @@
+.contenido-principal {
+    background-color: #ffffff; /* Fondo blanco */
+  }
+  
+  .centrado-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .titulo-grande {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: baseline;
+  }
+
+  .descripcion {
+    font-size: 25px; /* Tamaño de fuente para la descripción */
+    color: #555; /* Color de texto gris oscuro */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+
+  .centrar-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .clase-card {
+    margin-bottom: 10px;
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+  }
+  
+  .clase-card ion-card-header {
+    background-color: #f0f5f5; /* Fondo verde grisáceo pálido */
+  }
+  
+  .clase-card ion-card-content {
+    color: #333; /* Texto oscuro */
+  }
+  
+  .clase-card ion-card-title,
+  .clase-card ion-card-subtitle {
+    color: #2ecc71; /* Texto verde */
+  }
+  

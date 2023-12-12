@@ -1,0 +1,29 @@
+.contenido-principal {
+  background-color: #ffffff; /* Fondo blanco */
+}
+
+.titulo-grande {
+  font-size: 24px; /* Tamaño de fuente más grande */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.centrado-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-top: 20px; /* Ajusta según sea necesario */
+}
+
+.card-persona {
+  width: 80%; /* Ajusta el ancho según sea necesario */
+  background-color: #f5f8f8; /* Fondo verde grisáceo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.escanear-boton {
+  margin-top: 20px; /* Espaciado superior del botón de escanear */
+  --border-color: #8f8f8f; /* Contorno gris */
+  --color: #2ecc71; /* Texto verde */
+}

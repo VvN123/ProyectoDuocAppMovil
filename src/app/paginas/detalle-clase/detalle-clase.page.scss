@@ -1,0 +1,33 @@
+.contenido-principal {
+    background-color: #ffffff; /* Fondo blanco */
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: baseline;
+  }
+  
+  .titulo-grande {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: baseline;
+  }
+  
+  .card-asignatura {
+    width: 80%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centrar la tarjeta horizontalmente */
+    background-color: #f5f8f8; /* Fondo verde grisáceo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .card-header-asignatura {
+    background-color: grey; /* Color de fondo del encabezado (rojo) */
+    color: #ffffff; /* Color del texto en el encabezado (blanco) */
+  }
+  
+  .crear-clase-boton {
+    margin-top: 20px; /* Espaciado superior del botón */
+    --border-color: #8f8f8f; /* Contorno gris */
+    --color: #28a745; /* Texto verde */
+  }
+  

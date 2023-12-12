@@ -67,3 +67,5 @@ testem.log
 .DS_Store
 Thumbs.db
 src/.DS_Store
+src/app/.DS_Store
+src/.DS_Store

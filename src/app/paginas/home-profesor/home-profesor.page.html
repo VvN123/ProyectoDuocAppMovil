@@ -1,25 +1,35 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Bienvenido : {{ usuario.nombre }}</ion-title>
+  <ion-toolbar color="light">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/ruta-de-vuelta"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bienvenido: {{ usuario.nombre }}</ion-title>
   </ion-toolbar>
 </ion-header>
+<br><br>
+<ion-content [fullscreen]="true" class="contenido-principal">
+  <div class="centrado-vertical ion-text-center">
+    <ion-title class="titulo-grande">Control de Asistencia</ion-title>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">alumnohome</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <p class="descripcion">
+      Debe seleccionar una clase para poder realizar el seguimiento de asistencia de sus alumnos.
+    </p>
 
-  <ion-card *ngFor="let clase of clases" (click)="verDetalleAsignatura(clase.idAsignatura)">
-    <ion-card-header>
-      <ion-card-title>{{ clase.nombre }}</ion-card-title>
-      <ion-card-subtitle>{{ clase.idAsignatura}}</ion-card-subtitle>
-    </ion-card-header>
+    <div class="centrar-tarjetas">
+      <ion-card *ngFor="let clase of clases" (click)="verDetalleAsignatura(clase.idAsignatura)" class="clase-card">
+        <ion-card-header>
+          <ion-card-title>{{ clase.nombre }}</ion-card-title>
+          <ion-card-subtitle>{{ clase.idAsignatura }}</ion-card-subtitle>
+        </ion-card-header>
 
-    <ion-card-content>
-      {{ clase.profe_a_cargo}}
-    </ion-card-content>
-  </ion-card>
-
+        <ion-card-content>
+          {{ clase.profe_a_cargo }}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
 </ion-content>
+
+
+
+

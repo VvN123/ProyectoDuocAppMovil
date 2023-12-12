@@ -1,37 +1,42 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-
-    <ion-title>alumnohome</ion-title>
-    <ion-title>Home Alumno</ion-title>
-
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bienvenido: {{ usuario.nombre }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
+<ion-content [fullscreen]="true" class="contenido-principal">
+  <div class="centrado-vertical ion-text-center">
 
-      <ion-title size="large">alumnohome</ion-title>
+    <!-- Título -->
+    <ion-title class="titulo-grande ion-padding-top">Marcar Asistencia</ion-title>
 
-      <ion-title size="large">Home Alumno</ion-title>
+    <!-- Card con la foto y datos -->
+    <ion-card class="card-persona">
+      <ion-card-content>
+        <!-- Foto de la persona -->
+        <ion-img src="assets/card1.png" alt="Foto de la persona"></ion-img>
 
-    </ion-toolbar>
-  </ion-header>
-  <p>Nombre del usuario: {{ usuario.nombre }}</p>
+        <!-- Datos de la persona -->
+        <ion-list>
+          <ion-item *ngFor="let asignatura of asignaturas">
+            <ion-label>
+              {{ asignatura.nombre }}
+              {{ asignatura.idAsignatura }}
+              {{ asignatura.profe_a_cargo }}
+            </ion-label>
+          </ion-item>
+          <!-- Agrega más campos según sea necesario -->
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
 
-  <ion-list>
-    <ion-item *ngFor="let asignatura of asignaturas">
-      <ion-label>
-        {{ asignatura.nombre }}
-        {{ asignatura.idAsignatura }}
-        {{ asignatura.profe_a_cargo }}
-      </ion-label>
-    </ion-item>
-  </ion-list>
+    <!-- Botón de Escanear -->
+    <ion-button (click)="startScan()" expand="full" fill="solid" shape="round" class="escanear-boton">
+      ESCANEAR
+    </ion-button>
 
-  <ion-button (click)="startScan()" expand="block" fill="solid" shape="round">
-    ESCANEAR
-  </ion-button>
-
-  <label> {{ lecturaQr }} </label>
+  </div>
 </ion-content>

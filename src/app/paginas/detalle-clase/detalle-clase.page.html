@@ -1,31 +1,27 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>informacion_asignatura</ion-title>
+    <ion-title class="titulo-grande">informacion_asignatura</ion-title>
     <ion-buttons slot="end">
-      <ion-back-button defaultHref="profesorhome"></ion-back-button>
+      <ion-back-button defaultHref="home-profesor"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
-
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="contenido-principal">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">informacion_asignatura</ion-title>
+      <ion-title size="large">Tomar Asistencia</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-card color="danger">
-    <ion-card-header>
-      <ion-card-title>{{asignatura.nombre}}</ion-card-title>
-      <ion-card-subtitle>{{asignatura.idAsignatura}}</ion-card-subtitle>
+<br><br>
+  <ion-card class="card-asignatura">
+    <ion-card-header class="card-header-asignatura">
+      <ion-card-title>{{ asignatura.nombre }}</ion-card-title>
+      <ion-card-subtitle>{{ asignatura.idAsignatura }}</ion-card-subtitle>
     </ion-card-header>
 
-
-    <ion-button (click)="crearAsistencia()" expand="full" color="light">Crear Clase</ion-button>
-
+    <ion-button (click)="crearAsistencia()" expand="full" color="light" class="crear-clase-boton">
+      Crear Clase
+    </ion-button>
   </ion-card>
-
-
-
-
 </ion-content>

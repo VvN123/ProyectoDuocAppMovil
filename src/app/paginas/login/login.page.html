@@ -6,46 +6,29 @@
 
       </ion-button>
     </ion-buttons>
-    <ion-title>Iniciar Sesion</ion-title>
+    <ion-title>Inicia Session</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">formulario</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Ingresa a Duoc UC</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-      <form>
-        <ion-list>
-          <ion-item>
-            <ion-label position="floating">Nombre de Usuario</ion-label>
-            <ion-input type="text" [(ngModel)]="usuario" placeholder="Usuario" name="nombre"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" [(ngModel)]="contrasena" placeholder="Contraseña" name="password"></ion-input>
-          </ion-item>
-          <br>
-        </ion-list>
-        <br>
-
-        <ion-button (click)="Enviar()" expand="block" fill="solid" shape="round">
-          Iniciar
-        </ion-button>
-
-        <br>
-
-      </form>
-    </ion-card-content>
-  </ion-card>
-
-
-
-</ion-content>
+  <ion-text class="ion-text-center" color="dark">
+    <h4>Registro de clases</h4>
+    <div class="logo-container">
+      <p><img class="icon-gif" src="assets/logo.png" width="170px" height="170x"></p>
+    </div>
+  </ion-text>
+    <!-- comentario -->
+    <ion-input type="email" 
+    label="Usuario" labelPlacement="floating" helperText="Ingrese su Rut"             
+    [(ngModel)]="usuario" class="custom-input"></ion-input>
+  <ion-input type="password" labelPlacement="floating" label="Clave" [(ngModel)]="contrasena" class="custom-input"></ion-input>
+  
+    <div class="ion-text-center"> <!-- Centrar el contenido -->
+      <ion-button fill="solid" size="medium" shape="round" class="custom-button" color="secondary"(click)="Enviar()">Ingresar<ion-icon name="log-in"></ion-icon></ion-button>
+    </div>
+  <!--<ion-button fill="outline" shape="round" expand="block" [routerLink]="['/crearuser']">Crear Cuenta</ion-button>-->
+  <div class="ion-text-center"> <!-- Centrar el contenido -->
+    <h2 class="custom-header">¿Has olvidado tu contraseña?</h2>
+    <ion-button fill="solid" size="medium" shape="round" class="custom-button" color="secondary" >Restablecer Contraseña<ion-icon name="key"></ion-icon></ion-button>
+  </div>
+  </ion-content>
