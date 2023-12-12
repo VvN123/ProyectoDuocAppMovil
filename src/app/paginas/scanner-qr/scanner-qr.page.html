@@ -1,13 +1,18 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>scanner-qr</ion-title>
+    <ion-title>codigo qr</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="informacio-asignatura"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">scanner-qr</ion-title>
+      <ion-title size="large">qr</ion-title>
     </ion-toolbar>
   </ion-header>
+  <qrcode [qrdata]="id_asistencia" [width]="256" [allowEmptyString]="true"></qrcode>
 </ion-content>

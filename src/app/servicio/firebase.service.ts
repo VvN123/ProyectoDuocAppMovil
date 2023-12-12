@@ -87,6 +87,8 @@ export class FirebaseService {
     // Guardar el objeto Asistencia en Firebase
     const asistenciaRef = ref(this.db, `/asistencia/${uuid}`);
     await set(asistenciaRef, nuevaAsistencia);
+    console.log('asistencia creada '+ nuevaAsistencia)
+    console.log('asistencia creada '+ asistenciaRef)
 
     return uuid; // Devuelve el UUID del nuevo registro de asistencia
   }

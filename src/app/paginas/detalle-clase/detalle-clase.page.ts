@@ -39,7 +39,7 @@ export class DetalleClasePage implements OnInit {
   }
 
   verDetalleAsignatura(id_asistencia: string) {
-    this.router.navigate(['/qr'], {
+    this.router.navigate(['/scanner-qr'], {
       queryParams: { id_asistencia: id_asistencia }
     });
   }
