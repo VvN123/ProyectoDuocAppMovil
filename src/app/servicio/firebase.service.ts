@@ -55,10 +55,11 @@ export class FirebaseService {
     return false; // Usuario no encontrado o contraseña incorrecta
   }
 
-  async obtenerAsignatura(nombreAsignatura: string): Promise<Clase | null> {
-    const asignaturaRef = ref(this.db, `/asignatura/${nombreAsignatura}`);
+  async obtenerAsignatura(idClase: string): Promise<Clase | null> {
+    const asignaturaRef = ref(this.db, `/clase/${idClase}`);
     const snapshot = await get(asignaturaRef);
     if (snapshot.exists()) {
+      console.log(snapshot.val() as Clase)
       return snapshot.val() as Clase; // Retorna los datos de la asignatura
     } else {
       return null; // No se encontró la asignatura
