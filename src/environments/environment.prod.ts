@@ -3,7 +3,7 @@ export const environment = {
   firebaseConfig : {
     apiKey: "AIzaSyAT_Kjf2CmIQMnCpnAlZM7BDo56PwWKk5A",
     authDomain: "qr-asistencia-d431c.firebaseapp.com",
-    databaseURL: "https://qr-asistencia-d431c-default-rtdb.firebaseio.com",
+    databaseURL: "https://qr-asistencia-d431c-default-rtdb.firebaseio.com", // link a firebase
     projectId: "qr-asistencia-d431c",
     storageBucket: "qr-asistencia-d431c.appspot.com",
     messagingSenderId: "1065641335774",
