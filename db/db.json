@@ -1,36 +1,36 @@
 {
   "usuario": {
-    "1111-1": {
+    "111-1": {
       "nombre": "Giovanni Rossi",
       "clase_a_cargo": "vacio",
       "clases_inscrita": ["HI1234", "AR1234"],
       "contrasena": "123",
       "esProfesor": false,
-      "rut": "1111-1"
+      "rut": "111-1"
     },
-    "2222-2": {
+    "222-2": {
       "nombre": "Maria Bianchi",
       "clase_a_cargo": "vacio",
       "clases_inscrita": ["AR1234", "ET1234"],
       "contrasena": "123",
       "esProfesor": false,
-      "rut": "2222-2"
+      "rut": "222-2"
     },
-    "3333-3": {
+    "123-4": {
       "nombre": "Pietro Russo",
       "clase_a_cargo": ["HI1234", "AR1234"],
       "clases_inscrita": "vacio",
       "contrasena": "123",
       "esProfesor": true,
-      "rut": "3333-3"
+      "rut": "123-4"
     },
-    "4444-4": {
+    "432-1": {
       "nombre": "Anna Ferrari",
       "clase_a_cargo": ["ET1234"],
       "clases_inscrita": "vacio",
       "contrasena": "123",
       "esProfesor": true,
-      "rut": "4444-4"
+      "rut": "432-1"
     }
   },
   "clase": {
@@ -38,22 +38,22 @@
       "idAsignatura": "HI1234",
       "nombre": "Historia",
       "seccion": "001",
-      "profe_a_cargo": "3333-3",
-      "usuario_inscrito": ["1111-1"]
+      "profe_a_cargo": "123-4",
+      "usuario_inscrito": ["111-1"]
     },
     "AR1234": {
       "idAsignatura": "AR1234",
       "nombre": "Artes",
       "seccion": "002",
-      "profe_a_cargo": "3333-3",
-      "usuario_inscrito": ["1111-1", "2222-2"]
+      "profe_a_cargo": "123-4",
+      "usuario_inscrito": ["111-1", "222-2"]
     },
     "ET1234": {
       "idAsignatura": "ET1234",
       "nombre": "Etica",
       "seccion": "003",
-      "profe_a_cargo": "4444-4",
-      "usuario_inscrito": ["2222-2"]
+      "profe_a_cargo": "432-1",
+      "usuario_inscrito": ["222-2"]
     }
   },
   "asistencia": {
@@ -61,7 +61,7 @@
       "idAsistencia": "56554544",
       "idClase": "HI1234",
       "nombreClase": "Historia",
-      "usuarios_presentes": ["1111-1"]
+      "usuarios_presentes": ["111-1"]
     }
   }
 }

@@ -1,13 +1,13 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Home Estudiantes</ion-title>
+  <ion-toolbar color="warning">
+    <ion-title>Home Estudiante</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Home Estudiantes</ion-title>
+      <ion-title size="large">Home Estudiante</ion-title>
     </ion-toolbar>
   </ion-header>
   <p>Hola {{ usuario.nombre }}</p>
@@ -29,3 +29,12 @@
 
   <label> {{ lecturaQr }} </label>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

@@ -52,7 +52,7 @@ export class FirebaseService {
     if (usuario && usuario.contrasena === password) {
       return true; // Usuario y contraseña correctos
     }
-    return false; // Usuario no encontrado o contraseña incorrecta
+    return false; // Usuario y/o contraseña incorrectos
   }
 
   async obtenerAsignatura(idClase: string): Promise<Clase | null> {
@@ -60,9 +60,9 @@ export class FirebaseService {
     const snapshot = await get(asignaturaRef);
     if (snapshot.exists()) {
       console.log(snapshot.val() as Clase)
-      return snapshot.val() as Clase; // Retorna los datos de la asignatura
+      return snapshot.val() as Clase; // Devuelve la asignatura
     } else {
-      return null; // No se encontró la asignatura
+      return null; // No existe la asignatura
     }
   }
   
@@ -77,20 +77,20 @@ export class FirebaseService {
   async crearAsistencia(clase: Clase): Promise<string> {
     const uuid = this.generateUuid();
 
-    // Crear un nuevo objeto Asistencia usando la clase modelo
+    // Crear el objeto Asistencia
     const nuevaAsistencia = new Asistencia();
     nuevaAsistencia.fecha = this.getCurrentTimestamp();
     nuevaAsistencia.nombreClase = clase.nombre;
     nuevaAsistencia.idClase = clase.idAsignatura;
     nuevaAsistencia.idAsistencia = uuid;
 
-    // Guardar el objeto Asistencia en Firebase
+    // Crear el registro de asistencia en la base de datos
     const asistenciaRef = ref(this.db, `/asistencia/${uuid}`);
     await set(asistenciaRef, nuevaAsistencia);
     console.log('asistencia creada '+ nuevaAsistencia)
     console.log('asistencia creada '+ asistenciaRef)
 
-    return uuid; // Devuelve el UUID del nuevo registro de asistencia
+    return uuid; // Devuelve el id de la asistencia
   }
 
   async alumnoPresente(idAsistencia: string, idUsuario: string): Promise<void> {

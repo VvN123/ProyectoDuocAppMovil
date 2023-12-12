@@ -25,7 +25,7 @@ export class DetalleClasePage implements OnInit {
         if (asignaturaObtenida) {
           this.asignatura = asignaturaObtenida;
         } else {
-          // Manejar el caso de que la asignatura no se encuentre
+          //muestra mensaje en consola si falla
           console.log('Asignatura no encontrada');
         }
       }

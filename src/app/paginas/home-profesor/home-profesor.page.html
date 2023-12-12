@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Bienvenido : {{ usuario.nombre }}</ion-title>
+  <ion-toolbar color="warning">
+    <ion-title>Hola {{ usuario.nombre }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +10,9 @@
       <ion-title size="large">alumnohome</ion-title>
     </ion-toolbar>
   </ion-header>
-
+  <br>
+  <ion-title>Cursos</ion-title>
+  <br>
   <ion-card *ngFor="let clase of clases" (click)="verDetalleAsignatura(clase.idAsignatura)">
     <ion-card-header>
       <ion-card-title>{{ clase.nombre }}</ion-card-title>
@@ -34,3 +36,12 @@
   </ion-list>
 
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-title>Footer</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="detalle-clase"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
