@@ -1,56 +1,56 @@
 {
   "usuario": {
     "1111-1": {
-      "nombre": "Juan Pérez",
+      "nombre": "Giovanni Rossi",
       "clase_a_cargo": "vacio",
-      "clases_inscrita": ["py2567", "py2686"],
-      "contrasena": "123456",
+      "clases_inscrita": ["HI1234", "AR1234"],
+      "contrasena": "123",
       "esProfesor": false,
       "rut": "1111-1"
     },
     "2222-2": {
-      "nombre": "María González",
+      "nombre": "Maria Bianchi",
       "clase_a_cargo": "vacio",
-      "clases_inscrita": ["py2686", "py6452"],
-      "contrasena": "123456",
+      "clases_inscrita": ["AR1234", "ET1234"],
+      "contrasena": "123",
       "esProfesor": false,
       "rut": "2222-2"
     },
     "3333-3": {
-      "nombre": "Pedro Rodríguez",
-      "clase_a_cargo": ["py2567", "py2686"],
+      "nombre": "Pietro Russo",
+      "clase_a_cargo": ["HI1234", "AR1234"],
       "clases_inscrita": "vacio",
-      "contrasena": "123456",
+      "contrasena": "123",
       "esProfesor": true,
       "rut": "3333-3"
     },
     "4444-4": {
-      "nombre": "Ana Martínez",
-      "clase_a_cargo": ["py6452"],
+      "nombre": "Anna Ferrari",
+      "clase_a_cargo": ["ET1234"],
       "clases_inscrita": "vacio",
-      "contrasena": "123456",
+      "contrasena": "123",
       "esProfesor": true,
       "rut": "4444-4"
     }
   },
   "clase": {
-    "py2567": {
-      "idAsignatura": "py2567",
-      "nombre": "Programacion Movil",
+    "HI1234": {
+      "idAsignatura": "HI1234",
+      "nombre": "Historia",
       "seccion": "001",
       "profe_a_cargo": "3333-3",
       "usuario_inscrito": ["1111-1"]
     },
-    "py2686": {
-      "idAsignatura": "py2686",
-      "nombre": "Consulta base de datos",
+    "AR1234": {
+      "idAsignatura": "AR1234",
+      "nombre": "Artes",
       "seccion": "002",
       "profe_a_cargo": "3333-3",
       "usuario_inscrito": ["1111-1", "2222-2"]
     },
-    "py6452": {
-      "idAsignatura": "py6452",
-      "nombre": "Arquitectura de software",
+    "ET1234": {
+      "idAsignatura": "ET1234",
+      "nombre": "Etica",
       "seccion": "003",
       "profe_a_cargo": "4444-4",
       "usuario_inscrito": ["2222-2"]
@@ -59,8 +59,8 @@
   "asistencia": {
     "56554544": {
       "idAsistencia": "56554544",
-      "idClase": "py2567",
-      "nombreClase": "Programacion Movil",
+      "idClase": "HI1234",
+      "nombreClase": "Historia",
       "usuarios_presentes": ["1111-1"]
     }
   }

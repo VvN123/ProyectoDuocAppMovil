@@ -1,10 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button (click)="mostrarMenu()">
-        <ion-icon slot="start" name="menu-outline" color="warning"></ion-icon>
-
-      </ion-button>
     </ion-buttons>
     <ion-title>Iniciar Sesion</ion-title>
   </ion-toolbar>
@@ -19,25 +15,25 @@
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Ingresa a Duoc UC</ion-card-title>
+      <ion-title size="large" class="ion-text-center">RegistrApp<ion-icon name="checkmark-circle"></ion-icon></ion-title>
     </ion-card-header>
     <ion-card-content>
       <form>
         <ion-list>
           <ion-item>
-            <ion-label position="floating">Nombre de Usuario</ion-label>
+            <ion-label position="floating" color="warning">Rut de Usuario</ion-label>
             <ion-input type="text" [(ngModel)]="usuario" placeholder="Usuario" name="nombre"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Contraseña</ion-label>
+            <ion-label position="floating" color="warning">Contraseña</ion-label>
             <ion-input type="password" [(ngModel)]="contrasena" placeholder="Contraseña" name="password"></ion-input>
           </ion-item>
           <br>
         </ion-list>
         <br>
 
-        <ion-button (click)="Enviar()" expand="block" fill="solid" shape="round">
-          Iniciar
+        <ion-button (click)="Enviar()" expand="block" fill="solid" shape="round" >
+          Iniciar<ion-icon name="finger-print"></ion-icon>
         </ion-button>
 
         <br>

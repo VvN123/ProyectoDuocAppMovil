@@ -36,8 +36,8 @@ export class LoginPage implements OnInit {
       // Mostrar alerta de éxito
       await this.fire.setCurrentUser(usuario);
       const alert = await this.alertController.create({
-        header: 'Ingreso correctamente',
-        message: 'Bienvenido a Duoc UC!',
+        header: 'Has ingresado correctamente',
+        message: '¡Bienvenido a DuocUC!',
         buttons: ['OK']
       });
       await alert.present();
@@ -52,7 +52,7 @@ export class LoginPage implements OnInit {
       // Mostrar alerta de error
       const alert = await this.alertController.create({
         header: 'Error',
-        message: 'Usuario o contraseña incorrectos',
+        message: 'Datos incorrectos, intente nuevamente',
         buttons: ['OK']
       });
       await alert.present();
