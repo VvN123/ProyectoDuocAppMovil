@@ -81,7 +81,7 @@ export class FirebaseService {
     const nuevaAsistencia = new Asistencia();
     nuevaAsistencia.fecha = this.getCurrentTimestamp();
     nuevaAsistencia.nombreClase = clase.nombre;
-    nuevaAsistencia.idClase = clase.idClase;
+    nuevaAsistencia.idClase = clase.idAsignatura;
     nuevaAsistencia.idAsistencia = uuid;
 
     // Guardar el objeto Asistencia en Firebase
